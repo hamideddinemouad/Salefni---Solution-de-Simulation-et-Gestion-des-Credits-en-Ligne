@@ -1,0 +1,14 @@
+import HeroContent from "./HeroContent";
+import SimulationCard from "./SimulationCard";
+export default function Hero() {
+  return (
+    <section class="bg-gradient-to-br from-white to-primary-light py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <HeroContent />
+          <SimulationCard />
+        </div>
+      </div>
+    </section>
+  );
+}

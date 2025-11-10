@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salefni - Simulez vos crédits en quelques clics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-main': '#00796B',
+            'primary-light': '#E0F2F1',
+            'accent-action': '#FF7043',
+            'accent-hover': '#F4511E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-lg bg-primary-main flex items-center justify-center text-white">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M2 12h20M7 9.5h10v5H7z"></path>
+            </svg>
+          </div>
+          <span class="text-xl font-bold text-primary-main">Salefni</span>
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="flex gap-3 items-center">
+          <button class="px-6 py-2 border-2 border-primary-main text-primary-main font-semibold rounded-lg hover:bg-primary-light transition-colors">
+            Connexion
+          </button>
+          <button class="px-6 py-2 bg-accent-action text-white font-semibold rounded-lg hover:bg-accent-hover transition-all hover:-translate-y-0.5 shadow-md">
+            Commencer
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-white to-primary-light py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Hero Content -->
+        <div>
+          <h1 class="text-5xl lg:text-6xl font-bold text-primary-main mb-6 leading-tight">
+            Simulez vos crédits en quelques clics
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Découvrez les conditions de vos crédits (auto, consommation, immobilier) et obtenez une estimation
+            complète avec échéancier.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="flex items-center justify-center gap-2 px-8 py-4 bg-accent-action text-white font-semibold rounded-lg hover:bg-accent-hover transition-all hover:-translate-y-1 shadow-lg">
+              <span>Simuler maintenant</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <button class="px-8 py-4 border-2 border-primary-main text-primary-main font-semibold rounded-lg hover:bg-primary-light transition-colors">
+              En savoir plus
+            </button>
+          </div>
+        </div>
+
+        <!-- Simulation Card -->
+        <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
+          <div class="bg-gray-100 p-4 rounded-lg mb-6">
+            <p class="text-sm text-gray-600 font-medium mb-1">Type de crédit</p>
+            <p class="text-lg font-semibold text-primary-main">Crédit automobile</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-100 p-4 rounded-lg">
+              <p class="text-sm text-gray-600 font-medium mb-1">Montant</p>
+              <p class="text-2xl font-bold text-primary-main">25 000 €</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+              <p class="text-sm text-gray-600 font-medium mb-1">Durée</p>
+              <p class="text-2xl font-bold text-primary-main">60 mois</p>
+            </div>
+          </div>
+
+          <div class="bg-accent-action/10 border-2 border-accent-action p-4 rounded-lg">
+            <p class="text-sm text-gray-600 font-medium mb-1">Mensualité estimée</p>
+            <p class="text-3xl font-bold text-accent-action">456 €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-primary-main mb-4">Pourquoi choisir Salefni ?</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Une plateforme simple, rapide et transparente pour simuler et demander vos crédits
+        </p>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-2 transition-all">
+          <div class="w-12 h-12 rounded-lg bg-primary-main text-white flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M2 12h20M7 9.5h10v5H7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary-main mb-2">Simulation Rapide</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Remplissez un simple formulaire et obtenez instantanément les résultats : mensualité, coût total et échéancier complet.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-2 transition-all">
+          <div class="w-12 h-12 rounded-lg bg-primary-main text-white flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary-main mb-2">Export PDF</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Téléchargez vos simulations et demandes au format PDF pour les partager ou les consulter plus tard.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-2 transition-all">
+          <div class="w-12 h-12 rounded-lg bg-primary-main text-white flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary-main mb-2">Suivi Simple</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Soumettez votre demande en ligne et recevez une confirmation immédiate. Suivez son statut facilement.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-2 transition-all">
+          <div class="w-12 h-12 rounded-lg bg-primary-main text-white flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 17"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary-main mb-2">Plusieurs Types</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Simulez tous types de crédits : automobile, consommation, immobilier et plus encore.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-2 transition-all">
+          <div class="w-12 h-12 rounded-lg bg-primary-main text-white flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary-main mb-2">100% Gratuit</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Utilisez nos outils de simulation sans frais, sans engagement et sans condition.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-2 transition-all">
+          <div class="w-12 h-12 rounded-lg bg-primary-main text-white flex items-center justify-center mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary-main mb-2">Données Sécurisées</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Vos informations personnelles sont protégées avec les derniers standards de sécurité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-primary-main py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-white mb-4">Prêt à simuler votre crédit ?</h2>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          Rejoignez des milliers d'utilisateurs qui ont déjà trouvé le crédit idéal avec Salefni.
+        </p>
+        <button class="inline-flex items-center gap-2 px-8 py-4 bg-accent-action text-white font-semibold rounded-lg hover:bg-accent-hover transition-all hover:-translate-y-1 shadow-lg">
+          <span>Commencer la simulation</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <!-- Logo Column -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-primary-main">
+              <path d="M12 2v20M2 12h20M7 9.5h10v5H7z"></path>
+            </svg>
+            <span class="text-lg font-bold text-primary-main">Salefni</span>
+          </div>
+          <p class="text-gray-600 text-sm">Simulez vos crédits simplement et rapidement.</p>
+        </div>
+
+        <!-- Products Column -->
+x
+
+        <!-- Support Column -->
+        <div>
+          <h4 class="font-bold text-primary-main mb-4">Support</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600 text-sm hover:text-primary-main transition-colors">FAQ</a></li>
+            <li><a href="#" class="text-gray-600 text-sm hover:text-primary-main transition-colors">Contact</a></li>
+            <li><a href="#" class="text-gray-600 text-sm hover:text-primary-main transition-colors">Aide</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div>
+          <h4 class="font-bold text-primary-main mb-4">Légal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600 text-sm hover:text-primary-main transition-colors">Conditions</a></li>
+            <li><a href="#" class="text-gray-600 text-sm hover:text-primary-main transition-colors">Confidentialité</a></li>
+            <li><a href="#" class="text-gray-600 text-sm hover:text-primary-main transition-colors">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-200 pt-8 text-center">
+        <p class="text-gray-600 text-sm">&copy; 2025 Salefni. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
