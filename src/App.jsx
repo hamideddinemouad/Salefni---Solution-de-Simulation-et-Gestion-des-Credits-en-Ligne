@@ -1,4 +1,5 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import GuestSimulationPage from './pages/Guest/GuestSimulationPage';
 import Nav from './components/shared/Nav'
 import Hero from './components/Hero/Hero'
 import Features from './components/Features/Features'
@@ -9,15 +10,16 @@ import Footer from './components/Footer/Footer'
 import './App.css'
 
 
+
 function App() {
-  const [count, setCount] = useState(0)
-  
+  // For demo: always show guest simulation at the top
   return <>
-  <Nav />
-  <Hero />
-  <Features />
-  <Cta />
-  <Footer />
+    <GuestSimulationPage />
+    <Nav />
+    <Hero />
+    <Features />
+    <Cta />
+    <Footer />
   </>
 }
 
